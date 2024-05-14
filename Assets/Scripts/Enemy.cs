@@ -7,7 +7,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private EnemyAnimation enemyAnimation;
     [SerializeField] private Slider healthBar;
     [SerializeField] private float maxHealth = 10;
+    [SerializeField] private float damage = 5;
 
+    public float Damage => damage;
     private float health;
 
     private void Start()

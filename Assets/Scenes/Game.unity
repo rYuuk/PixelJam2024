@@ -3109,6 +3109,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &837758459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8388470368223896285, guid: a321d885206e7144485558ba6d79b41c, type: 3}
+  m_PrefabInstance: {fileID: 5290036494052641237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &837758461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837758459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef63692d4e18af945af055d5b5e9e9d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
 --- !u!1 &1045552625
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,9 +3259,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 490366491}
     m_Modifications:
+    - target: {fileID: 918972333042151458, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797591198017837140, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797591198017837140, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797591198017837140, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555809502174829172, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5172214262774200585, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
       propertyPath: m_Name
       value: Slime (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449088893670481835, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449088893670481835, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6786132519618418049, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3308,9 +3354,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 490366491}
     m_Modifications:
+    - target: {fileID: 918972333042151458, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555809502174829172, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5172214262774200585, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
       propertyPath: m_Name
       value: Slime (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449088893670481835, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449088893670481835, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6786132519618418049, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10053,17 +10115,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 490366491}
     m_Modifications:
+    - target: {fileID: 918972333042151458, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555809502174829172, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5172214262774200585, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
       propertyPath: m_Name
       value: Slime
       objectReference: {fileID: 0}
+    - target: {fileID: 6449088893670481835, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449088893670481835, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6786132519618418049, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -628.3085
+      value: -628.563
       objectReference: {fileID: 0}
     - target: {fileID: 6786132519618418049, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -531.2431
+      value: -531.192
       objectReference: {fileID: 0}
     - target: {fileID: 6786132519618418049, guid: 668a07caf49e89044aa708a595ca1c83, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10170,7 +10248,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8388470368223896285, guid: a321d885206e7144485558ba6d79b41c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 837758461}
   m_SourcePrefab: {fileID: 100100000, guid: a321d885206e7144485558ba6d79b41c, type: 3}
 --- !u!1001 &8580654079171745810
 PrefabInstance:

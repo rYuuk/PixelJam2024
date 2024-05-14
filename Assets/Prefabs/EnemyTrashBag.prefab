@@ -214,6 +214,7 @@ MonoBehaviour:
   enemyAnimation: {fileID: 2198095106925055650}
   healthBar: {fileID: 851452931738565261}
   maxHealth: 10
+  damage: 20
 --- !u!114 &2462637217560175794
 MonoBehaviour:
   m_ObjectHideFlags: 0

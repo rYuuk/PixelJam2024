@@ -7,9 +7,11 @@ public class PlayerAction : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private PlayerController playerController;
     [SerializeField] private SwordAttack swordAttack;
-
+    [SerializeField] private float maxHealth = 100f;
+    private float health;
     private void Start()
     {
+        health = maxHealth;
         playerAnimation.SwordAttackStarted += StartSwordAttack;
         playerAnimation.SwordAttackEnded += EndSwordAttack;
     }
@@ -43,9 +45,12 @@ public class PlayerAction : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            if (other.GetComponentInParent<Enemy>())
+            var enemy = other.GetComponentInParent<Enemy>();
+            if (enemy != null)
             {
-                Debug.Log("Oi");
+                Debug.Log("Health: " + health + ", " + enemy.Damage);
+                health -= enemy.Damage;
+                HUD.Instance.SetHealth(health / maxHealth);
             }
         }
     }
