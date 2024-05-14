@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-
     [SerializeField] private EnemyAnimation enemyAnimation;
     [SerializeField] private Slider healthBar;
     [SerializeField] private float maxHealth = 10;
@@ -32,5 +31,16 @@ public class Enemy : MonoBehaviour
     public void Kill()
     {
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (other.TryGetComponent<PlayerAction>(out var player))
+            {
+                player.ReceiveDamage(damage);
+            }
+        }
     }
 }

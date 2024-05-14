@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
@@ -41,17 +42,9 @@ public class PlayerAction : MonoBehaviour
         swordAttack.StopAttack();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void ReceiveDamage(float damage)
     {
-        if (other.CompareTag("Enemy"))
-        {
-            var enemy = other.GetComponentInParent<Enemy>();
-            if (enemy != null)
-            {
-                Debug.Log("Health: " + health + ", " + enemy.Damage);
-                health -= enemy.Damage;
-                HUD.Instance.SetHealth(health / maxHealth);
-            }
-        }
+        health -= damage;
+        HUD.Instance.SetHealth(health / maxHealth);
     }
 }

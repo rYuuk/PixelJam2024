@@ -175,6 +175,7 @@ GameObject:
   - component: {fileID: 6786132519618418049}
   - component: {fileID: 4719196955364245872}
   - component: {fileID: 2462637217560175794}
+  - component: {fileID: 3130943127083004904}
   m_Layer: 0
   m_Name: EnemyTrashBag
   m_TagString: Enemy
@@ -215,6 +216,7 @@ MonoBehaviour:
   healthBar: {fileID: 851452931738565261}
   maxHealth: 10
   damage: 20
+  playerDetectionRadius: 0.3
 --- !u!114 &2462637217560175794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,6 +235,33 @@ MonoBehaviour:
   end: {fileID: 1631787934070420542}
   movementSpeed: 0.2
   canMove: 1
+--- !u!50 &3130943127083004904
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172214262774200585}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5867945699355113369
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,7 +309,6 @@ GameObject:
   - component: {fileID: 6417858774846535510}
   - component: {fileID: 9212553785779592824}
   - component: {fileID: 5112149248632426417}
-  - component: {fileID: 7756378453237963086}
   - component: {fileID: 2198095106925055650}
   m_Layer: 0
   m_Name: Character
@@ -365,33 +393,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000074505806, y: -0.00792098}
   m_Size: {x: 0.18, y: 0.15}
   m_Direction: 0
---- !u!50 &7756378453237963086
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5946200909417725524}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &2198095106925055650
 MonoBehaviour:
   m_ObjectHideFlags: 0
