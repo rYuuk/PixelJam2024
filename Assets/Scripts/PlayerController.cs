@@ -33,7 +33,6 @@ public class PlayerController : MonoBehaviour
             // If movement input is not 0, try to move
             if (movementInput != Vector2.zero)
             {
-
                 bool success = TryMove(movementInput);
 
                 if (!success)
@@ -53,7 +52,6 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("isMoving", false);
             }
 
-            Debug.Log("X: " + movementInput.x + "Y: " + movementInput.y);
             // Set direction of sprite to movement direction
             if (movementInput.x < 0)
             {

@@ -1,35 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    Animator animator;
 
-    public float Health {
-        set {
-            health = value;
+    [SerializeField] private EnemyAnimation enemyAnimation;
+    [SerializeField] private Slider healthBar;
+    [SerializeField] private float maxHealth = 10;
 
-            if(health <= 0) {
-                Defeated();
-            }
+    private float health;
+
+    private void Start()
+    {
+        health = maxHealth;
+        enemyAnimation.DefeatedAnimationCompleted += Kill;
+    }
+
+    public void ReceiveDamage(float amount)
+    {
+        health -= amount;
+        healthBar.value = health / maxHealth;
+        if (health <= 0)
+        {
+            enemyAnimation.PlayDefeatAnimation();
         }
-        get {
-            return health;
-        }
     }
 
-    public float health = 1;
-
-    private void Start() {
-        animator = GetComponent<Animator>();
-    }
-
-    public void Defeated(){
-        animator.SetTrigger("Defeated");
-    }
-
-    public void RemoveEnemy() {
+    public void Kill()
+    {
         Destroy(gameObject);
     }
+
 }
