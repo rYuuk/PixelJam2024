@@ -1,28 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SwordAttack : MonoBehaviour
 {
-    public Collider2D swordCollider;
-    public float damage = 3;
-    Vector2 rightAttackOffset;
+    [SerializeField] private Collider2D swordCollider;
+    private Vector2 rightAttackOffset;
+
+    private float damage;
 
     private void Start()
     {
         rightAttackOffset = transform.position;
     }
 
-    public void AttackRight()
+    public void AttackRight(float damage)
     {
         swordCollider.enabled = true;
         transform.localPosition = rightAttackOffset;
+        this.damage = damage;
     }
 
-    public void AttackLeft()
+    public void AttackLeft(float damage)
     {
         swordCollider.enabled = true;
         transform.localPosition = new Vector3(rightAttackOffset.x * -1, rightAttackOffset.y);
+        this.damage = damage;
     }
 
     public void StopAttack()

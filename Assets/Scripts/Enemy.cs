@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
     {
         health -= amount;
         healthBar.value = health / maxHealth;
+
         if (health <= 0)
         {
             enemyAnimation.PlayDefeatAnimation();
@@ -30,5 +31,4 @@ public class Enemy : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
 }
