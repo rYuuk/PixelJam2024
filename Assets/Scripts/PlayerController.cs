@@ -11,19 +11,20 @@ public class PlayerController : MonoBehaviour
     public ContactFilter2D movementFilter;
     public SwordAttack swordAttack;
     public SpriteRenderer spriteRenderer;
+    [SerializeField] private PlayerAnimation playerAnimation;
 
-    Vector2 movementInput;
-    Rigidbody2D rb;
-    Animator animator;
-    List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+    private Vector2 movementInput;
+    private Rigidbody2D rb;
+    private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
-    bool canMove = true;
+    private bool canMove = true;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        playerAnimation.SwordAttackStarted += StartSwordAttack;
+        playerAnimation.SwordAttackEnded += EndSwordAttack;
     }
 
     private void FixedUpdate()
@@ -44,12 +45,11 @@ public class PlayerController : MonoBehaviour
                 {
                     success = TryMove(new Vector2(0, movementInput.y));
                 }
-
-                animator.SetBool("isMoving", success);
+                playerAnimation.PlayMoveAnimation(success);
             }
             else
             {
-                animator.SetBool("isMoving", false);
+                playerAnimation.PlayMoveAnimation(false);
             }
 
             // Set direction of sprite to movement direction
@@ -93,17 +93,17 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void OnMove(InputValue movementValue)
+    public void OnMove(InputValue movementValue)
     {
         movementInput = movementValue.Get<Vector2>();
     }
 
-    void OnAttack()
+    public void OnAttack()
     {
-        animator.SetTrigger("swordAttack");
+        playerAnimation.PlayAttackAnimation();
     }
 
-    public void SwordAttack()
+    public void StartSwordAttack()
     {
         LockMovement();
 
@@ -131,5 +131,9 @@ public class PlayerController : MonoBehaviour
     public void UnlockMovement()
     {
         canMove = true;
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+
     }
 }
