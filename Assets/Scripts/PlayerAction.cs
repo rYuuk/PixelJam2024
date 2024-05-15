@@ -15,6 +15,12 @@ public class PlayerAction : MonoBehaviour
         health = maxHealth;
         playerAnimation.SwordAttackStarted += StartSwordAttack;
         playerAnimation.SwordAttackEnded += EndSwordAttack;
+        playerAnimation.DeathAnimationCompleted += DeathAnimationCompleted;
+    }
+
+    private void DeathAnimationCompleted()
+    {
+        // GameManager.Instance.SetState(GameManager.State.GameOver);
     }
 
     public void OnAttack()
@@ -46,5 +52,10 @@ public class PlayerAction : MonoBehaviour
     {
         health -= damage;
         HUD.Instance.SetHealth(health / maxHealth);
+
+        if (health < 0)
+        {
+            playerAnimation.PlayDeathAnimation();
+        }
     }
 }

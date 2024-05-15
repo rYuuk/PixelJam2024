@@ -7,6 +7,7 @@ public class PlayerAnimation : MonoBehaviour
 
     public event Action SwordAttackStarted;
     public event Action SwordAttackEnded;
+    public event Action DeathAnimationCompleted;
 
     public void PlayMoveAnimation(bool isMoving)
     {
@@ -26,5 +27,15 @@ public class PlayerAnimation : MonoBehaviour
     public void SwordAttackEnd()
     {
         SwordAttackEnded?.Invoke();
+    }
+
+    public void PlayDeathAnimation()
+    {
+        animator.SetBool("isDead", true);
+    }
+
+    public void DeathAnimationComplete()
+    {
+        DeathAnimationCompleted?.Invoke();
     }
 }
