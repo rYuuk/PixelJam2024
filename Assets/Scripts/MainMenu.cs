@@ -48,8 +48,6 @@ public class MainMenu : MonoBehaviour
         }
 
         await SceneManager.UnloadSceneAsync(0);
-
-        Loading.Instance.SetActive(false);
     }
 
     private void OnQuitButton()
