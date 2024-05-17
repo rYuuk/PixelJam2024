@@ -24,21 +24,23 @@ public class GameManager : MonoBehaviour
         Instance = this;
         var level = PlayerPrefs.GetInt(CURRET_LEVEL, 2);
         await SwitchLevel(level);
-        Loading.Instance.SetActive(false);
+        // Loading.Instance.SetActive(false);
 
         currentState = State.Running;
     }
 
     public void SetState(State state)
     {
-        switch (state)
-        {
-
-        }
+        currentState = state;
     }
 
     public async Task SwitchLevel(int level)
     {
+        if (SceneManager.GetSceneByBuildIndex(level).IsValid())
+        {
+            return;
+        }
+
         await SceneManager.LoadSceneAsync(level, LoadSceneMode.Additive);
     }
 }

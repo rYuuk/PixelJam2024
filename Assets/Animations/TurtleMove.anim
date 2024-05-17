@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerSwordAttack
+  m_Name: TurtleMove
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,13 +21,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -2206127484133988912, guid: 0aec5dd7527597f4a8ab02763a853955, type: 3}
+      value: {fileID: 9121537013416536684, guid: 095ead22e7fc3df439876e76908c57f9, type: 3}
     - time: 0.1
-      value: {fileID: 23383751694667822, guid: 0aec5dd7527597f4a8ab02763a853955, type: 3}
+      value: {fileID: 6020666949240542198, guid: 095ead22e7fc3df439876e76908c57f9, type: 3}
     - time: 0.2
-      value: {fileID: 1258211766446213701, guid: 0aec5dd7527597f4a8ab02763a853955, type: 3}
+      value: {fileID: -5082761557975797469, guid: 095ead22e7fc3df439876e76908c57f9, type: 3}
     attribute: m_Sprite
-    path: player_0
+    path: Sprite
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -39,7 +39,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 4068080657
+      path: 850496168
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -48,9 +48,9 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -2206127484133988912, guid: 0aec5dd7527597f4a8ab02763a853955, type: 3}
-    - {fileID: 23383751694667822, guid: 0aec5dd7527597f4a8ab02763a853955, type: 3}
-    - {fileID: 1258211766446213701, guid: 0aec5dd7527597f4a8ab02763a853955, type: 3}
+    - {fileID: 9121537013416536684, guid: 095ead22e7fc3df439876e76908c57f9, type: 3}
+    - {fileID: 6020666949240542198, guid: 095ead22e7fc3df439876e76908c57f9, type: 3}
+    - {fileID: -5082761557975797469, guid: 095ead22e7fc3df439876e76908c57f9, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -75,18 +75,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0
-    functionName: SwordAttackStart
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.2
-    functionName: SwordAttackEnd
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

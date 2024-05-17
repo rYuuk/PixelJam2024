@@ -6,7 +6,7 @@ public class EnemyAnimation : MonoBehaviour
 {
     public event Action DefeatedAnimationCompleted;
     private Animator animator;
-    private void Start()
+    private void Awake()
     {
         animator = GetComponent<Animator>();
     }
@@ -14,6 +14,17 @@ public class EnemyAnimation : MonoBehaviour
     public void PlayDefeatAnimation()
     {
         animator.SetTrigger("Defeated");
+    }
+
+    public void PlayMoveAnimation(bool isMoving)
+    {
+        animator.SetBool("IsMoving", isMoving);
+    }
+
+    public void PlayCollisionAnimation()
+    {
+        animator.SetTrigger("Hit");
+        PlayMoveAnimation(false);
     }
 
     public void OnDefeatedAnimationComplete()

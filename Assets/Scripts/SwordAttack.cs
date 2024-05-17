@@ -9,7 +9,7 @@ public class SwordAttack : MonoBehaviour
 
     private void Start()
     {
-        rightAttackOffset = transform.position;
+        rightAttackOffset = transform.localPosition;
     }
 
     public void AttackRight(float damage)
