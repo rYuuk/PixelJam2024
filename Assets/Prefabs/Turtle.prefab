@@ -112,11 +112,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 8415168844051474541}
   enemyAnimation: {fileID: 3884145407019993881}
-  moveSpeed: 2
+  moveSpeed: 2.5
   minAngle: -45
   maxAngle: 45
   attackMoveDelayTime: 2
-  turtleHitCountBeforeStunned: 3
+  turtleHitCountBeforeStunned: 5
   enemy: {fileID: 8350410994312309955}
 --- !u!61 &7279691725089241536
 BoxCollider2D:

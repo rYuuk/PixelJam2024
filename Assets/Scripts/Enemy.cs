@@ -7,6 +7,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Slider healthBar;
     [SerializeField] private float maxHealth = 10;
     [SerializeField] private float damage = 5;
+    [SerializeField] private bool isBoss;
+    [SerializeField] private GameObject healthDrop;
+    [SerializeField, Range(0, 100)] private float healthDropChance;
 
     public float Damage => damage;
     private float health;
@@ -24,12 +27,24 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
+
             enemyAnimation.PlayDefeatAnimation();
+
+            if (isBoss)
+            {
+                GameManager.Instance.LevelFinished();
+            }
         }
     }
 
     public void Kill()
     {
+        var randomChance = Random.Range(0f, 1f);
+        if (randomChance < healthDropChance / 100)
+        {
+            Instantiate(healthDrop, transform.position, Quaternion.identity);
+        }
+
         Destroy(gameObject);
     }
 

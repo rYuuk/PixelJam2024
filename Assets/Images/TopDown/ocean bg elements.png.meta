@@ -1,0 +1,661 @@
+fileFormatVersion: 2
+guid: f508283715ff0c04a8c211065f2135d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2959111254011690120
+    second: ocean bg elements_0
+  - first:
+      213: 3191842316312840920
+    second: ocean bg elements_1
+  - first:
+      213: 6099757636800996437
+    second: ocean bg elements_2
+  - first:
+      213: -1433594337086107885
+    second: ocean bg elements_3
+  - first:
+      213: -6201979495086862755
+    second: ocean bg elements_4
+  - first:
+      213: -351576191525644163
+    second: ocean bg elements_5
+  - first:
+      213: 5706825428140102520
+    second: ocean bg elements_6
+  - first:
+      213: 7204077982521116104
+    second: ocean bg elements_7
+  - first:
+      213: 1045344195895064714
+    second: ocean bg elements_8
+  - first:
+      213: 5731369841264161450
+    second: ocean bg elements_9
+  - first:
+      213: -8514082703033706059
+    second: ocean bg elements_10
+  - first:
+      213: -3284068904920359416
+    second: ocean bg elements_11
+  - first:
+      213: 338015801098898007
+    second: ocean bg elements_12
+  - first:
+      213: 3285104103578952571
+    second: ocean bg elements_13
+  - first:
+      213: 1699576403212118114
+    second: ocean bg elements_14
+  - first:
+      213: 4482287470396417059
+    second: ocean bg elements_15
+  - first:
+      213: 8915184845165482598
+    second: ocean bg elements_16
+  - first:
+      213: 1949829078331513334
+    second: ocean bg elements_17
+  - first:
+      213: 8030320585616980387
+    second: ocean bg elements_18
+  - first:
+      213: -2012879845685213689
+    second: ocean bg elements_19
+  - first:
+      213: -5315702495177625460
+    second: ocean bg elements_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ocean bg elements_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 193
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873c5c51eff1fe6d0800000000000000
+      internalID: -2959111254011690120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 127
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da03e2fca3bb4c20800000000000000
+      internalID: 3191842316312840920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_2
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 127
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554ef75b041b6a450800000000000000
+      internalID: 6099757636800996437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 134
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f88f1cb89da1ce0800000000000000
+      internalID: -1433594337086107885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_4
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 160
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e471b32842ee9a0800000000000000
+      internalID: -6201979495086862755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_5
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7811a80153fe1bf0800000000000000
+      internalID: -351576191525644163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_6
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 143
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8731577ad77b23f40800000000000000
+      internalID: 5706825428140102520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 193
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5426a91c60af360800000000000000
+      internalID: 7204077982521116104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_8
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 63
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a887758f10fc18e00800000000000000
+      internalID: 1045344195895064714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_9
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 63
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2ffe8218ae98f40800000000000000
+      internalID: 5731369841264161450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_10
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 81
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9d06124e6e7d980800000000000000
+      internalID: -8514082703033706059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_11
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 102
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ed0501bb4ac62d0800000000000000
+      internalID: -3284068904920359416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_12
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 76
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a08f8849fd0b400800000000000000
+      internalID: 338015801098898007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_13
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 85
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b736008e6c8079d20800000000000000
+      internalID: 3285104103578952571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 193
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2682816ebbb169710800000000000000
+      internalID: 1699576403212118114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_15
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324a926c4b8443e30800000000000000
+      internalID: 4482287470396417059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_16
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 0
+        width: 63
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662d80bc16919bb70800000000000000
+      internalID: 8915184845165482598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_17
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 30
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f95da2573f2f0b10800000000000000
+      internalID: 1949829078331513334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_18
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 39
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9f432b60e617f60800000000000000
+      internalID: 8030320585616980387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_19
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 23
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 706c36ee170d014e0800000000000000
+      internalID: -2012879845685213689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ocean bg elements_20
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 21
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80b7439eb4da36b0800000000000000
+      internalID: -5315702495177625460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ocean bg elements_0: -2959111254011690120
+      ocean bg elements_1: 3191842316312840920
+      ocean bg elements_10: -8514082703033706059
+      ocean bg elements_11: -3284068904920359416
+      ocean bg elements_12: 338015801098898007
+      ocean bg elements_13: 3285104103578952571
+      ocean bg elements_14: 1699576403212118114
+      ocean bg elements_15: 4482287470396417059
+      ocean bg elements_16: 8915184845165482598
+      ocean bg elements_17: 1949829078331513334
+      ocean bg elements_18: 8030320585616980387
+      ocean bg elements_19: -2012879845685213689
+      ocean bg elements_2: 6099757636800996437
+      ocean bg elements_20: -5315702495177625460
+      ocean bg elements_3: -1433594337086107885
+      ocean bg elements_4: -6201979495086862755
+      ocean bg elements_5: -351576191525644163
+      ocean bg elements_6: 5706825428140102520
+      ocean bg elements_7: 7204077982521116104
+      ocean bg elements_8: 1045344195895064714
+      ocean bg elements_9: 5731369841264161450
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

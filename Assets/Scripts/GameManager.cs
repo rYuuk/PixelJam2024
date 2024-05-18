@@ -1,46 +1,62 @@
-using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private const string CURRET_LEVEL = nameof(CURRET_LEVEL);
-
     public enum State
     {
         None,
         Running,
         Pause,
-        Finished,
+        LevelFinished,
+        GameFinished,
         GameOver
     }
 
     public static GameManager Instance { get; private set; }
 
     private State currentState = State.None;
+    [SerializeField] private GameOverMenu gameOverMenu;
+    [SerializeField] private PauseMenu pauseMenu;
 
     private async void Awake()
     {
         Instance = this;
-        var level = PlayerPrefs.GetInt(CURRET_LEVEL, 2);
-        await SwitchLevel(level);
+        // await LevelLoader.Instance.Continue();
         // Loading.Instance.SetActive(false);
 
         currentState = State.Running;
     }
 
+    private void Update()
+    {
+        if (currentState == State.Running && Input.GetKeyUp(KeyCode.Escape))
+        {
+            pauseMenu.Toggle();
+        }
+    }
+
     public void SetState(State state)
     {
         currentState = state;
+        switch (currentState)
+        {
+            case State.GameOver:
+                gameOverMenu.Toggle(true);
+                break;
+
+        }
     }
 
-    public async Task SwitchLevel(int level)
+    public async void LevelFinished()
     {
-        if (SceneManager.GetSceneByBuildIndex(level).IsValid())
+        if (LevelLoader.Instance.IsLastLevel())
         {
-            return;
+            currentState = State.GameFinished;
         }
-
-        await SceneManager.LoadSceneAsync(level, LoadSceneMode.Additive);
+        else
+        {
+            currentState = State.LevelFinished;
+            await LevelLoader.Instance.LoadNextLevel();
+        }
     }
 }

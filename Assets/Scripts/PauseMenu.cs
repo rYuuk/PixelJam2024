@@ -31,17 +31,15 @@ public class PauseMenu : MonoBehaviour
     private void OnResume()
     {
         Toggle(false);
+        GameManager.Instance.SetState(GameManager.State.Running);
     }
 
-    private void Update()
+    public void Toggle()
     {
-        if (Input.GetKeyUp(KeyCode.Escape))
-        {
-            Toggle(isEnable ? !enabled : enabled);
-        }
+        Toggle(isEnable ? !enabled : enabled);
     }
 
-    private void Toggle(bool enable)
+    public void Toggle(bool enable)
     {
         isEnable = enable;
         Time.timeScale = enable ? 0 : 1;

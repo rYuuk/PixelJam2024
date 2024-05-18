@@ -162,6 +162,51 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!1 &3297395655515742206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2331843595184506449}
+  - component: {fileID: 1322911865912983951}
+  m_Layer: 0
+  m_Name: LightningSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2331843595184506449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297395655515742206}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.115, y: 0.043, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6779092237992732385}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1322911865912983951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297395655515742206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31013bf99dbdb3a4d989f1553736421a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightningAttackPrefab: {fileID: 7902705178079220046, guid: 8881d0f04bbb8a5478ed2b2f31e5fd7c, type: 3}
 --- !u!1 &4282888097746622646
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,6 +339,7 @@ Transform:
   - {fileID: 6891874067662627528}
   - {fileID: 6545516396342338996}
   - {fileID: 8744616905787738022}
+  - {fileID: 2331843595184506449}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1416079459400608834
@@ -479,6 +525,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1416079459400608834}
+  character: {fileID: 6891874067662627528}
+  floatStrength: 0.08
+  speed: 1
 --- !u!114 &6984008030767927328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,6 +546,7 @@ MonoBehaviour:
   playerController: {fileID: 7505261058066404497}
   swordAttack: {fileID: 3820370059602143746}
   maxHealth: 100
+  attackDelay: 2
 --- !u!1 &7900267992044035435
 GameObject:
   m_ObjectHideFlags: 0

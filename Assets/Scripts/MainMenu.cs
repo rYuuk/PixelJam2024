@@ -1,7 +1,4 @@
-using System;
-using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
@@ -34,20 +31,7 @@ public class MainMenu : MonoBehaviour
     private async void OnStartButton()
     {
         Loading.Instance.SetActive(true);
-        var async = SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
-        async.allowSceneActivation = false;
-        while (!async.isDone && async.progress < 0.9f)
-        {
-            await Task.Yield();
-        }
-        async.allowSceneActivation = true;
-
-        while (!async.isDone)
-        {
-            await Task.Yield();
-        }
-
-        await SceneManager.UnloadSceneAsync(0);
+        await LevelLoader.Instance.StartGame();
     }
 
     private void OnQuitButton()
