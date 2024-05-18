@@ -995,6 +995,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.062
       objectReference: {fileID: 0}
+    - target: {fileID: 2753876362796519064, guid: 5085bbad37fd7c24ab2ccfa40f9d9bbd, type: 3}
+      propertyPath: Speed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4801063326581262671, guid: 5085bbad37fd7c24ab2ccfa40f9d9bbd, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1045,6 +1049,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984008030767927328, guid: 5085bbad37fd7c24ab2ccfa40f9d9bbd, type: 3}
       propertyPath: swordAttack
+      value: 
+      objectReference: {fileID: 14265687}
+    - target: {fileID: 6984008030767927328, guid: 5085bbad37fd7c24ab2ccfa40f9d9bbd, type: 3}
+      propertyPath: LightningAttack
+      value: 
+      objectReference: {fileID: 14265687}
+    - target: {fileID: 6984008030767927328, guid: 5085bbad37fd7c24ab2ccfa40f9d9bbd, type: 3}
+      propertyPath: LightningSpawner
       value: 
       objectReference: {fileID: 14265687}
     m_RemovedComponents: []

@@ -6,7 +6,7 @@ public class PlayerAction : MonoBehaviour
     [SerializeField] private PlayerAnimation playerAnimation;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private PlayerController playerController;
-    [SerializeField] private LightiningSpawner swordAttack;
+    [SerializeField] private LightiningSpawner LightningSpawner;
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float attackDelay = 0.5f;
 
@@ -54,19 +54,19 @@ public class PlayerAction : MonoBehaviour
     {
         playerController.LockMovement();
 
-        if (spriteRenderer.flipX == true)
-        {
-            swordAttack.AttackLeft(playerData.Attack);
-        }
-        else
-        {
-            swordAttack.AttackRight(playerData.Attack);
-        }
     }
 
     public void EndSwordAttack()
     {
         playerController.UnlockMovement();
+         if (spriteRenderer.flipX == false)
+        {
+            LightningSpawner.SpawnLeft(playerData.Attack);
+        }
+        else
+        {
+            LightningSpawner.SpawnRight(playerData.Attack);
+        }
         // swordAttack.StopAttack();
     }
 

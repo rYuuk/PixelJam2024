@@ -137,6 +137,7 @@ MonoBehaviour:
   animator: {fileID: 7804734938085909938}
   spriteRenderer: {fileID: 2505858897562555112}
   speed: 2
+  duration: 1
 --- !u!1 &6191699964465621518
 GameObject:
   m_ObjectHideFlags: 0
