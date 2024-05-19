@@ -19,20 +19,20 @@ public class GameFinishedMenu : MonoBehaviour
 
     public void Toggle(bool enable)
     {
-        Time.timeScale = enable ? 0 : 1;
+        // Time.timeScale = enable ? 0 : 1;
         gameFinishedMenu.SetActive(enable);
     }
 
     private async void OnReturnToMenu()
     {
-        Time.timeScale = 1;
+        // Time.timeScale = 1;
         Toggle(false);
         await LevelLoader.Instance.ReturnToMenu();
     }
 
     private async void OnReplay()
     {
-        Time.timeScale = 1;
+        // Time.timeScale = 1;
         Toggle(false);
         await LevelLoader.Instance.RestartCurrentLevel();
     }

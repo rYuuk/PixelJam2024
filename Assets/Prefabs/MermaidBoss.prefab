@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1387845955433841309}
   - component: {fileID: 8635334983807913117}
   - component: {fileID: 8461897129390770817}
+  - component: {fileID: 290060075163075011}
   m_Layer: 0
   m_Name: MermaidBoss
   m_TagString: Enemy
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161902156769423772}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -612.616, y: -531.658, z: -6.383484}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -48,8 +49,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAnimation: {fileID: 1632178547569955929}
   healthBar: {fileID: 0}
-  maxHealth: 50
-  damage: 20
+  maxHealth: 100
+  damage: 30
   isBoss: 1
   healthDrop: {fileID: 0}
   healthDropChance: 0
@@ -71,6 +72,33 @@ MonoBehaviour:
   maxScale: 0.5
   totalTimeForScale: 2
   delayBeforeScaleDown: 2
+--- !u!50 &290060075163075011
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161902156769423772}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &3233086364446767733
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +347,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 3.25
+  m_Radius: 3.58
 --- !u!114 &5387707262422456663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,7 +371,6 @@ GameObject:
   - component: {fileID: 7358094391241491869}
   - component: {fileID: 4785441411890344606}
   - component: {fileID: 1632178547569955929}
-  - component: {fileID: 4748523906511831541}
   m_Layer: 0
   m_Name: Character
   m_TagString: Enemy
@@ -402,30 +429,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a12e0d2c3442b694b9dd38fe1cbd93ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &4748523906511831541
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7696841993290756064}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 1
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4

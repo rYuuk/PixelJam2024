@@ -26,7 +26,9 @@ public class GameOverMenu : MonoBehaviour
     {
         Time.timeScale = 1;
         Loading.Instance.SetActive(true);
+        Toggle(false);
         await LevelLoader.Instance.RestartCurrentLevel();
+        Loading.Instance.SetActive(false);
     }
 
     private async void OnReturnToMenu()

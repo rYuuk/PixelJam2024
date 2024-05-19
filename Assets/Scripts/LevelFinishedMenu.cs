@@ -17,27 +17,27 @@ public class LevelFinishedMenu : MonoBehaviour
 
     public void Toggle(bool enable)
     {
-        Time.timeScale = enable ? 0 : 1;
+        // Time.timeScale = enable ? 0 : 1;
         levelFinishedMenu.SetActive(enable);
     }
 
     private async void OnReturnToMenu()
     {
-        Time.timeScale = 1;
+        // Time.timeScale = 1;
         Toggle(false);
         await LevelLoader.Instance.ReturnToMenu();
     }
 
     private async void OnReplay()
     {
-        Time.timeScale = 1;
+        // Time.timeScale = 1;
         Toggle(false);
         await LevelLoader.Instance.RestartCurrentLevel();
     }
 
     private async void OnNextLevel()
     {
-        Time.timeScale = 1;
+        // Time.timeScale = 1;
         Toggle(false);
         Loading.Instance.SetActive(true);
         await LevelLoader.Instance.LoadNextLevel();

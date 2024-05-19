@@ -45,11 +45,8 @@ public class LevelLoader : MonoBehaviour
     public async Task RestartCurrentLevel()
     {
         var level = PlayerPrefs.GetInt(CURRENT_LEVEL, 2);
-        await SceneManager.UnloadSceneAsync(level);
-        await LoadSceneAsync(level);
-        // await SceneManager.UnloadSceneAsync(1);
-        // await LoadSceneAsync(1);
-
+        // await SceneManager.UnloadSceneAsync(level);
+        await SceneManager.LoadSceneAsync(1);
     }
 
     public async Task ReturnToMenu()
@@ -62,7 +59,6 @@ public class LevelLoader : MonoBehaviour
     public async Task ReturnToMenuAndShowCredits()
     {
         await SceneManager.LoadSceneAsync(0);
-        Debug.Log("ShowCredits");
     }
 
     public async Task LoadSceneAsync(int level)
@@ -92,6 +88,8 @@ public class LevelLoader : MonoBehaviour
         await LoadSceneAsync(level + 1);
         PlayerPrefs.SetInt(CURRENT_LEVEL, level + 1);
     }
+
+    public int GetLevel() => PlayerPrefs.GetInt(CURRENT_LEVEL, 2);
 
     public void ResetLevel()
     {

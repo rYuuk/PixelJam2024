@@ -48,8 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAnimation: {fileID: 8525859188056882062}
   healthBar: {fileID: 0}
-  maxHealth: 50
-  damage: 20
+  maxHealth: 80
+  damage: 25
   isBoss: 1
   healthDrop: {fileID: 0}
   healthDropChance: 0

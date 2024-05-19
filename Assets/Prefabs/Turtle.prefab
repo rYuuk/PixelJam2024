@@ -118,6 +118,7 @@ MonoBehaviour:
   attackMoveDelayTime: 2
   turtleHitCountBeforeStunned: 5
   enemy: {fileID: 8350410994312309955}
+  audioSource: {fileID: 0}
 --- !u!61 &7279691725089241536
 BoxCollider2D:
   m_ObjectHideFlags: 0

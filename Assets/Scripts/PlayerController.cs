@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private ContactFilter2D movementFilter;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private PlayerAnimation playerAnimation;
+    [SerializeField] private ParticleSystem trailParticles;
+    [SerializeField] private SpriteRenderer turtleSprite;
+    [SerializeField] private SpriteRenderer orcaSprite;
 
     private Vector2 movementInput;
     private Rigidbody2D rb;
@@ -50,11 +53,35 @@ public class PlayerController : MonoBehaviour
             // Set direction of sprite to movement direction
             if (movementInput.x < 0)
             {
+                if (trailParticles.isStopped)
+                {
+                    trailParticles.Play();
+                }
+
                 spriteRenderer.flipX = false;
+                turtleSprite.flipX = false;
+                orcaSprite.flipX = false;
+                trailParticles.transform.localScale = new Vector3(1, 1, 1);
             }
             else if (movementInput.x > 0)
             {
+                if (trailParticles.isStopped)
+                {
+                    trailParticles.Play();
+                }
+
                 spriteRenderer.flipX = true;
+                turtleSprite.flipX = true;
+                orcaSprite.flipX = true;
+
+                trailParticles.transform.localScale = new Vector3(1, 1, -1);
+            }
+            else if (movementInput.x == 0)
+            {
+                if (trailParticles.isPlaying)
+                {
+                    trailParticles.Stop();
+                }
             }
         }
     }

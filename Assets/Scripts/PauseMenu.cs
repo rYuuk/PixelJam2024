@@ -10,6 +10,8 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private Button settingsButton;
     [SerializeField] private Button quitButton;
 
+    [SerializeField] private GameObject settings;
+
     private bool isEnable = false;
 
     private void OnEnable()
@@ -26,6 +28,8 @@ public class PauseMenu : MonoBehaviour
 
     private void OnSettings()
     {
+        Toggle(false);
+        settings.SetActive(true);
     }
 
     private void OnResume()

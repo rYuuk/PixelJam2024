@@ -9,8 +9,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button quitButton;
     [SerializeField] private Button creditButton;
     [SerializeField] private GameObject settings;
-    [SerializeField] private GameObject creditMenu;
-    [SerializeField] private Button exitCreditMenu;
+    [SerializeField] private CreditMenu creditMenu;
 
     private void OnEnable()
     {
@@ -18,7 +17,6 @@ public class MainMenu : MonoBehaviour
         settingsButton.onClick.AddListener(OnSettingsButton);
         quitButton.onClick.AddListener(OnQuitButton);
         creditButton.onClick.AddListener(OnCredit);
-        exitCreditMenu.onClick.AddListener(OnExitCreditMenu);
     }
 
     private void OnDisable()
@@ -27,7 +25,6 @@ public class MainMenu : MonoBehaviour
         settingsButton.onClick.RemoveListener(OnSettingsButton);
         quitButton.onClick.RemoveListener(OnQuitButton);
         creditButton.onClick.RemoveListener(OnCredit);
-        exitCreditMenu.onClick.RemoveListener(OnExitCreditMenu);
     }
 
     private void OnSettingsButton()
@@ -48,12 +45,6 @@ public class MainMenu : MonoBehaviour
 
     private void OnCredit()
     {
-        creditMenu.SetActive(true);
+        creditMenu.Toggle();
     }
-
-    private void OnExitCreditMenu()
-    {
-        creditMenu.SetActive(false);
-    }
-
 }
