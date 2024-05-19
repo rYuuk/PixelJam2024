@@ -1,3 +1,5 @@
+using System;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -69,12 +71,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void LevelFinished()
+    public async void LevelFinished()
     {
         if (LevelLoader.Instance.IsLastLevel())
         {
             AudioController.Instance.PlayGameCompleteMusic();
             currentState = State.GameFinished;
+            player.GetComponent<PlayerController>().enabled = false;
+            player.GetComponent<PlayerAction>().enabled = false;
+            var boss = GameObject.Find("MermaidBoss");
+            boss.SetActive(false);
+            Debug.Log("Boss: " + boss.transform.position.ToString("F2"));
+            player.GetComponent<Friends>().GameFinish(boss.transform.position);
+
+            await Task.Delay(TimeSpan.FromSeconds(5));
+
             LevelLoader.Instance.ResetLevel();
             gameFinishedMenu.Toggle(true);
             bubbleController.ActivateAll();

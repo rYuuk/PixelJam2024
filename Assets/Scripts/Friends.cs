@@ -4,6 +4,7 @@ public class Friends : MonoBehaviour
 {
     [SerializeField] private GameObject orca;
     [SerializeField] private GameObject turtle;
+    [SerializeField] private GameObject mermaid;
 
     public void Toggle(int level)
     {
@@ -17,5 +18,12 @@ public class Friends : MonoBehaviour
                 orca.SetActive(true);
                 break;
         }
+    }
+
+    public void GameFinish(Vector3 position)
+    {
+        Debug.Log("pos: " + position.ToString("F2"));
+        mermaid.SetActive(true);
+        // mermaid.transform.position = position;
     }
 }
