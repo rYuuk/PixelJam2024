@@ -213,6 +213,9 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   maxHealth: 50
   damage: 20
+  isBoss: 1
+  healthDrop: {fileID: 0}
+  healthDropChance: 0
 --- !u!1 &4026444072244103324
 GameObject:
   m_ObjectHideFlags: 0

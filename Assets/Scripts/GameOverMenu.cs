@@ -10,8 +10,6 @@ public class GameOverMenu : MonoBehaviour
     [SerializeField] private Button retry;
     [SerializeField] private Button returnToMenuButton;
 
-    private bool isEnable = false;
-
     private void OnEnable()
     {
         retry.onClick.AddListener(OnRetry);
@@ -20,7 +18,6 @@ public class GameOverMenu : MonoBehaviour
 
     public void Toggle(bool enable)
     {
-        isEnable = enable;
         Time.timeScale = enable ? 0 : 1;
         gameOverMenu.SetActive(enable);
     }

@@ -15,15 +15,18 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     private State currentState = State.None;
+    [SerializeField] private LevelFinishedMenu levelFinishedMenu;
+    [SerializeField] private GameFinishedMenu gameFinishedMenu;
     [SerializeField] private GameOverMenu gameOverMenu;
     [SerializeField] private PauseMenu pauseMenu;
+    [SerializeField] private GameObject player;
+    [SerializeField] private CameraFollow cam;
 
     private async void Awake()
     {
         Instance = this;
-        // await LevelLoader.Instance.Continue();
-        // Loading.Instance.SetActive(false);
-
+        await LevelLoader.Instance.Continue();
+        Loading.Instance.SetActive(false);
         currentState = State.Running;
     }
 
@@ -43,20 +46,23 @@ public class GameManager : MonoBehaviour
             case State.GameOver:
                 gameOverMenu.Toggle(true);
                 break;
-
         }
     }
 
-    public async void LevelFinished()
+    public void LevelFinished()
     {
         if (LevelLoader.Instance.IsLastLevel())
         {
             currentState = State.GameFinished;
+            LevelLoader.Instance.ResetLevel();
+            gameFinishedMenu.Toggle(true);
         }
         else
         {
             currentState = State.LevelFinished;
-            await LevelLoader.Instance.LoadNextLevel();
+            cam.ToggleFollow(true);
+            levelFinishedMenu.Toggle(true);
+            player.transform.position = Vector3.zero;
         }
     }
 }

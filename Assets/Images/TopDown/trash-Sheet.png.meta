@@ -230,7 +230,7 @@ TextureImporter:
         width: 63
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,6 +239,50 @@ TextureImporter:
       bones: []
       spriteID: 0654a08de9f78324eb6e733d69504914
       internalID: 728510574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trash-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 65
+        width: 191
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7817d1259da13c145b1da3bcff49d04f
+      internalID: -483975140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trash-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc2e49aa91d2e84fae5a7797a8deb61
+      internalID: 2041168919
       vertices: []
       indices: 
       edges: []
@@ -256,6 +300,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       trash-Sheet_5: 728510574
+      trash-Sheet_6: -483975140
+      trash-Sheet_7: 2041168919
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

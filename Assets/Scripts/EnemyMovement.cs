@@ -24,6 +24,11 @@ public class EnemyMovement : MonoBehaviour
     {
         if (isDetecting)
         {
+            if (player == null)
+            {
+                Debug.Log("Null");
+            }
+
             var distanceToPlayer = Vector3.Distance(enemyCharacter.position, player.position);
 
             if (distanceToPlayer <= playerDetectionRadius)

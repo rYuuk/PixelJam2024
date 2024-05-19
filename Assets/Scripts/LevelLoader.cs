@@ -1,4 +1,3 @@
-using System;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     public static LevelLoader Instance;
-    private const string CURRET_LEVEL = nameof(CURRET_LEVEL);
+    private const string CURRENT_LEVEL = nameof(CURRENT_LEVEL);
 
     private void Awake()
     {
@@ -39,23 +38,31 @@ public class LevelLoader : MonoBehaviour
 
     public async Task Continue()
     {
-        var level = PlayerPrefs.GetInt(CURRET_LEVEL, 2);
+        var level = PlayerPrefs.GetInt(CURRENT_LEVEL, 2);
         await LoadSceneAsync(level);
     }
 
     public async Task RestartCurrentLevel()
     {
-        var level = PlayerPrefs.GetInt(CURRET_LEVEL, 2);
+        var level = PlayerPrefs.GetInt(CURRENT_LEVEL, 2);
         await SceneManager.UnloadSceneAsync(level);
         await LoadSceneAsync(level);
-        await SceneManager.UnloadSceneAsync(1);
-        await LoadSceneAsync(1);
+        // await SceneManager.UnloadSceneAsync(1);
+        // await LoadSceneAsync(1);
 
     }
 
     public async Task ReturnToMenu()
     {
+        Loading.Instance.SetActive(true);
         await SceneManager.LoadSceneAsync(0);
+        Loading.Instance.SetActive(false);
+    }
+
+    public async Task ReturnToMenuAndShowCredits()
+    {
+        await SceneManager.LoadSceneAsync(0);
+        Debug.Log("ShowCredits");
     }
 
     public async Task LoadSceneAsync(int level)
@@ -69,7 +76,7 @@ public class LevelLoader : MonoBehaviour
 
     public bool IsLastLevel()
     {
-        var level = PlayerPrefs.GetInt(CURRET_LEVEL, 2);
+        var level = PlayerPrefs.GetInt(CURRENT_LEVEL, 2);
         if (level == 4)
         {
             return true;
@@ -80,7 +87,14 @@ public class LevelLoader : MonoBehaviour
 
     public async Task LoadNextLevel()
     {
-        var level = PlayerPrefs.GetInt(CURRET_LEVEL, 2);
+        var level = PlayerPrefs.GetInt(CURRENT_LEVEL, 2);
+        await SceneManager.UnloadSceneAsync(level);
         await LoadSceneAsync(level + 1);
+        PlayerPrefs.SetInt(CURRENT_LEVEL, level + 1);
+    }
+
+    public void ResetLevel()
+    {
+        PlayerPrefs.SetInt(CURRENT_LEVEL, 2);
     }
 }

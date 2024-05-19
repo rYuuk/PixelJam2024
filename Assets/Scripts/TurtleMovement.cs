@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TurtleMovement : MonoBehaviour
+public class TurtleMovement : MonoBehaviour, IEnemyBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private EnemyAnimation enemyAnimation;
@@ -12,7 +12,6 @@ public class TurtleMovement : MonoBehaviour
     [SerializeField] private Enemy enemy;
 
     private Vector2 currentDirection;
-    // private Rigidbody2D rb;
 
     private float startTime;
     private bool canMove;
@@ -22,10 +21,7 @@ public class TurtleMovement : MonoBehaviour
 
     private void Start()
     {
-        // rb = GetComponent<Rigidbody2D>();
         SetRandomDirection();
-        // var player = GameObject.FindGameObjectWithTag("Player");
-        // // Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
 
     private void Update()
@@ -54,6 +50,11 @@ public class TurtleMovement : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.position + (Vector3)currentDirection);
     }
 
+    public void StartAttack()
+    {
+        SetMove(true);
+    }
+
     public void SetMove(bool move)
     {
         canMove = move;
@@ -65,9 +66,7 @@ public class TurtleMovement : MonoBehaviour
 
     private void Move()
     {
-        // Move the enemy in the current direction
-        // rb.velocity = currentDirection * moveSpeed * Time.fixedDeltaTime;
-        rb.MovePosition(rb.position + currentDirection * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * currentDirection);
 
     }
 

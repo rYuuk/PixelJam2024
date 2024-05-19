@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: cfb452f48fb8b4047b984b786cbce3fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2938694427340379935
+    second: bubbles-shield_0
+  - first:
+      213: 2387961187469504119
+    second: bubbles-shield_1
+  - first:
+      213: -1452406173654646548
+    second: bubbles-shield_2
+  - first:
+      213: -6248999780045104705
+    second: bubbles-shield_3
+  - first:
+      213: 4690035546306378988
+    second: bubbles-shield_4
+  - first:
+      213: -8745899660387119405
+    second: bubbles-shield_5
+  - first:
+      213: 7148257215793130601
+    second: bubbles-shield_6
+  - first:
+      213: 460554004560343829
+    second: bubbles-shield_7
+  - first:
+      213: -1530617250941341650
+    second: bubbles-shield_8
+  - first:
+      213: -6941194881890195093
+    second: bubbles-shield_9
+  - first:
+      213: -4880220238898047048
+    second: bubbles-shield_10
+  - first:
+      213: -633089504393024305
+    second: bubbles-shield_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bubbles-shield_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 485
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8e4fafcf8a737d0800000000000000
+      internalID: -2938694427340379935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubbles-shield_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 494
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e2a8c4c0eb32120800000000000000
+      internalID: 2387961187469504119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubbles-shield_3
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 497
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb9dae40fc71749a0800000000000000
+      internalID: -6248999780045104705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubbles-shield_4
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 492
+        width: 45
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecfb810b7a561140800000000000000
+      internalID: 4690035546306378988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubbles-shield_8
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 132
+        width: 306
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e207e8648b722cae0800000000000000
+      internalID: -1530617250941341650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubbles-shield_9
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 134
+        width: 293
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69ec2ce70cebaf90800000000000000
+      internalID: -6941194881890195093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubbles-shield_10
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 267
+        width: 263
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b75fca9c89f54cb0800000000000000
+      internalID: -4880220238898047048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubbles-shield_11
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 164
+        width: 293
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc20a33370d637f0800000000000000
+      internalID: -633089504393024305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c91abef675e62dd479221628cffc0d5e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bubbles-shield_0: -2938694427340379935
+      bubbles-shield_1: 2387961187469504119
+      bubbles-shield_10: -4880220238898047048
+      bubbles-shield_11: -633089504393024305
+      bubbles-shield_2: -1452406173654646548
+      bubbles-shield_3: -6248999780045104705
+      bubbles-shield_4: 4690035546306378988
+      bubbles-shield_5: -8745899660387119405
+      bubbles-shield_6: 7148257215793130601
+      bubbles-shield_7: 460554004560343829
+      bubbles-shield_8: -1530617250941341650
+      bubbles-shield_9: -6941194881890195093
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

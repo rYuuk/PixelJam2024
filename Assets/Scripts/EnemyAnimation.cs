@@ -27,6 +27,11 @@ public class EnemyAnimation : MonoBehaviour
         PlayMoveAnimation(false);
     }
 
+    public void PlayAttackAnimation()
+    {
+        animator.SetTrigger("Attack");
+    }
+
     public void OnDefeatedAnimationComplete()
     {
         DefeatedAnimationCompleted?.Invoke();

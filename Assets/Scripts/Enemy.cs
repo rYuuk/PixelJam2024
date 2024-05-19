@@ -40,7 +40,7 @@ public class Enemy : MonoBehaviour
     public void Kill()
     {
         var randomChance = Random.Range(0f, 1f);
-        if (randomChance < healthDropChance / 100)
+        if (healthDrop != null && randomChance < healthDropChance / 100)
         {
             Instantiate(healthDrop, transform.position, Quaternion.identity);
         }
@@ -55,6 +55,7 @@ public class Enemy : MonoBehaviour
             if (other.TryGetComponent<PlayerAction>(out var player))
             {
                 player.ReceiveDamage(damage);
+
             }
         }
     }

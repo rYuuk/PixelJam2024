@@ -17,10 +17,13 @@ public class LightningAttack : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer.DOColor(new Color(1, 1, 1, 0), duration).OnComplete(() =>
-        {
-            DestroyAfterAnimation();
-        });
+        Invoke(nameof(DestroySelf), duration);
+    }
+
+    private void DestroySelf()
+    {
+        animator.SetTrigger("Hit");
+        // Destroy(gameObject);
     }
 
     private void FixedUpdate()
@@ -30,6 +33,12 @@ public class LightningAttack : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.GetComponent<IgnoreAttack>())
+        {
+            animator.SetTrigger("Hit");
+            return;
+        }
+
         var enemy = other.GetComponentInParent<Enemy>();
         if (enemy != null)
         {
@@ -41,6 +50,7 @@ public class LightningAttack : MonoBehaviour
     public void DestroyAfterAnimation()
     {
         Destroy(gameObject);
+        CancelInvoke(nameof(DestroySelf));
     }
 
     public void SetDamage(float damage)

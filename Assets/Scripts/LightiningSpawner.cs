@@ -13,17 +13,13 @@ public class LightiningSpawner : MonoBehaviour
 
     public void SpawnRight(float damage)
     {
-        Debug.Log("Spawn right");
-
         transform.localPosition = new Vector3(rightAttackOffset.x * -1, rightAttackOffset.y);
-
         Attack(damage, true);
     }
 
     public void SpawnLeft(float damage)
     {
         transform.localPosition = rightAttackOffset;
-        Debug.Log("Spawn left");
         Attack(damage, false);
     }
 
